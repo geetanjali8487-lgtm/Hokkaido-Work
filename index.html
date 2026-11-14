@@ -32,7 +32,11 @@
     h1 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.08em;color:var(--green)}
     .lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:490px;margin:0 0 30px}
     .buttons{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:13px;text-decoration:none;border-radius:99px;padding:14px 20px;font-size:13px;font-weight:750}.btn-dark{background:var(--green);color:white}.btn-line{border:1px solid var(--line)}.arrow{font-size:17px}
-    .art{position:relative;min-height:465px;border-radius:5px 130px 5px 5px;overflow:hidden;background:linear-gradient(180deg,#dbe9df 0%,#dbe9df 44%,#bdd2ba 44%,#bdd2ba 54%,#678a6f 54%,#678a6f 66%,#345d4f 66%,#345d4f 100%)}
+    .art{position:relative;min-height:465px;border-radius:5px 130px 5px 5px;overflow:hidden;background:#dbe9df}
+    .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .art:after{content:"";position:absolute;inset:58% 0 0;background:linear-gradient(transparent,rgba(16,35,28,.38));pointer-events:none}
+    .photo-credit{position:absolute;right:14px;bottom:14px;z-index:2;background:rgba(244,245,237,.94);padding:7px 10px;font-size:10px;color:#172d2b}
+    .photo-credit a{color:inherit}
     .sun{position:absolute;width:73px;height:73px;border-radius:50%;background:#f4d58a;right:20%;top:14%}
     .mountain{position:absolute;bottom:34%;width:0;height:0;border-left:190px solid transparent;border-right:190px solid transparent;border-bottom:195px solid #819f87;left:14%}
     .mountain:after{content:"";position:absolute;left:-94px;top:41px;width:0;height:0;border-left:94px solid transparent;border-right:94px solid transparent;border-bottom:110px solid #dbe9df}
@@ -64,7 +68,7 @@
           <p class="lead">For international students, people restarting a career, and other international job seekers exploring work in Hokkaido and elsewhere in Japan.</p>
           <div class="buttons"><a class="btn btn-dark" href="#get-started">Explore job options <span class="arrow">↗</span></a><a class="btn btn-line" href="#why-hokkaido">Jobs in Hokkaido <span class="arrow">↓</span></a></div>
         </div>
-        <div class="art" role="img" aria-label="Illustration of Hokkaido's green fields, lake, and mountains"><span class="note">Japan's northern island</span><span class="sun"></span><span class="mountain"></span><span class="ridge"></span><span class="lake"></span><span class="field"></span><span class="art-label">Hokkaido, Japan</span></div>
+        <div class="art"><img src="https://images.unsplash.com/photo-1694155011869-6ec870281cfa?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=NHwxMjA3fDA%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=1800" alt="Colorful flower fields at Shikisai-no-Oka in Biei, Hokkaido, with mountains in the distance" width="1800" height="1200" fetchpriority="high"><span class="art-label">Hokkaido, Japan</span><span class="photo-credit">Photo by <a href="https://unsplash.com/@jcs_chen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Zion C</a> on <a href="https://unsplash.com/photos/a-field-of-flowers-with-mountains-in-the-background-qfVIIIXaB18?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></span></div>
       </section>
       <div class="strip" aria-label="Job types and language requirements"><div class="stat"><strong>Flexible paths</strong><span>Compare full-time and part-time options</span></div><div class="stat"><strong>Who it's for</strong><span>Students, career changers, and returning workers</span></div><div class="stat"><strong>Language fit</strong><span>Focus on roles with no Japanese requirement</span></div></div>
       <section class="content" id="why-hokkaido">
